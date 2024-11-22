@@ -1,5 +1,7 @@
 import random
 
+# gets 2 card hands for 5 players
+
 class Poker:
     def __init__(self):
         self.suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
@@ -22,7 +24,6 @@ class Poker:
         for player, hand in self.players.items():
             print(f"{player}: {', '.join(hand)}")
 
-# Example usage
 poker_game = Poker()
 poker_game.deal_cards()
 print(poker_game.display_hands())
